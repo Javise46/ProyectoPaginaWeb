@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <title>Proyecto 5to.BACO</title>
+    </head>
+<body>
+    <div class="container">
+        <h1 align="center">Calculadora</h1>
+    </div>
+    <br><br>
+
+    <form method="post" action="Calcular.php">
+        <div class="row">
+            
+            <div class="input-field col s6">
+                <input name="n1" id="n1" type="number" >
+                <label class="active" for="n1">Primer Valor</label>
+            </div>
+            <div class="input-field col s6">
+                <input name="n2" id="n2" type="number">
+                <label class="active" for="n2">Segundo Valor</label>
+            </div>
+        </div>
+        
+        <div class="container" align="center"> 
+           
+            <input name="operacion"  type="submit" value="Sumar" class="waves-effect waves-light btn">
+            <input name="operacion"  type="submit" value="Restar" class="waves-effect waves-light btn">
+            <input name="operacion"  type="submit" value="Multiplicar" class="waves-effect waves-light btn">
+            <input name="operacion"  type="submit" value="Dividir" class="waves-effect waves-light btn">
+  
+        </div>
+        
+    </form>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</body>
+
+</html>
