@@ -27,17 +27,35 @@
                 <label class="active" for="n2">Segundo Valor</label>
             </div>
         </div>
-        
+        <div class="input-field col s6">
+            <label>Operacion</label>
+            <br>
+            <select name="operacion" class="browser-default">
+              <option value="Suma">Sumar </option>
+              <option value="Resta">Restar</option>
+              <option value="Multi">Multiplicar</option>
+              <option value="Divi">Dividir</option>
+            </select>
+        </div>
         <div class="container" align="center"> 
-           
+            <br><br>
             <input name="operacion"  type="submit" value="Sumar" class="waves-effect waves-light btn">
             <input name="operacion"  type="submit" value="Restar" class="waves-effect waves-light btn">
             <input name="operacion"  type="submit" value="Multiplicar" class="waves-effect waves-light btn">
             <input name="operacion"  type="submit" value="Dividir" class="waves-effect waves-light btn">
-  
+        </div>
+        <div class="container" align="center">
+            <br><br>
+            <input name="Resultado"  type="submit" value="Calcular" class="waves-effect waves-light btn">
         </div>
         
     </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+    </script>
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             

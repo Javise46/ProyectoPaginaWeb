@@ -1,18 +1,18 @@
 <?php
-    //echo "En Archivo calcular";
+  
     $num1=$_POST['n1'];
     $num2=$_POST['n2'];
     $operacion=$_POST['operacion'];
-        if($operacion == 'Sumar'){
+        if($operacion == 'Sumar' || $operacion == 'Suma'){
             $total= $num1 + $num2;
         }
-        else if($operacion== 'Restar'){
+        else if($operacion== 'Restar'|| $operacion == 'Resta'){
             $total= $num1 - $num2;
         }
-        else if($operacion == 'Multiplicar'){
+        else if($operacion == 'Multiplicar'|| $operacion == 'Multi'){
             $total= $num1 * $num2;
         }
-        else if($operacion== 'Dividir'){
+        else if($operacion== 'Dividir'|| $operacion == 'Divi'){
             $total= $num1 / $num2;
         }
         echo '<h1 class="center-align"> El Resultado es: '.$total.'</h1>';
