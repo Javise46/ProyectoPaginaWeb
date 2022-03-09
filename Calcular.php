@@ -3,16 +3,16 @@
     $num1=$_POST['n1'];
     $num2=$_POST['n2'];
     $operacion=$_POST['operacion'];
-        if($operacion == 'Sumar' || $operacion == 'Suma'){
+        if($operacion == 'Sumar' ){
             $total= $num1 + $num2;
         }
-        else if($operacion== 'Restar'|| $operacion == 'Resta'){
+        else if($operacion== 'Restar'){
             $total= $num1 - $num2;
         }
-        else if($operacion == 'Multiplicar'|| $operacion == 'Multi'){
+        else if($operacion == 'Multiplicar'){
             $total= $num1 * $num2;
         }
-        else if($operacion== 'Dividir'|| $operacion == 'Divi'){
+        else if($operacion== 'Dividir'){
             $total= $num1 / $num2;
         }
         echo '<h1 class="center-align"> El Resultado es: '.$total.'</h1>';
